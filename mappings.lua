@@ -18,7 +18,7 @@ M.dap_python = {
   n = {
     ["<leader>dpr"] = {
       function()
-       require('dap_python').test_method()
+       require('dap-python').test_method()
       end
     },
   },
