@@ -1,10 +1,10 @@
 local M = {}
 
--- M.general = {
---   n = {
---     [":"] = {":", "enter command mode", opts = {nowait = true}},
---      }
---  }
+M.general = {
+  n = {
+    [";"] = {":", "enter command mode", opts = {nowait = true}},
+     }
+ }
 
 M.dap = {
   plugin = true,
