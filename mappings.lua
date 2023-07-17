@@ -10,7 +10,7 @@ M.dap = {
   plugin = true,
   n = {
     ["<leader>db"] = {"<cmd> DapToggleBreakpoint <CR>"}
-  }
+  },
 }
 
 M.dap_python = {
@@ -20,7 +20,7 @@ M.dap_python = {
       function()
        require('dap_python').test_method()
       end
-    }
-  }
+    },
+  },
 }
 return M
