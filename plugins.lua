@@ -1,3 +1,4 @@
+local overrides=require("custom.configs.overrides")
 local plugins = {
   {
     "rcarriga/nvim-dap-ui",
@@ -70,5 +71,10 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = overrides.nvimtree,
+  },
+
 }
 return plugins
