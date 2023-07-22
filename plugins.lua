@@ -74,12 +74,13 @@ local plugins = {
   {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
+  },
  {
     "wakatime/vim-wakatime",
     event = "VeryLazy",
     --  config = function()
     --   vim.g.wakatime_api_key = vim.fn.system("pass show wakatime/api")
-    -- end,
+    -- end
   },
   -- {
   --   "vim-crystal/vim-crystal",
@@ -108,7 +109,6 @@ local plugins = {
       "nvim-lua/plenary.nvim",
       "nvim-telescope/telescope.nvim"
     },
-  }, },
-
+  },
 }
 return plugins
