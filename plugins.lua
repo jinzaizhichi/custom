@@ -74,7 +74,41 @@ local plugins = {
   {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
+ {
+    "wakatime/vim-wakatime",
+    event = "VeryLazy",
+    --  config = function()
+    --   vim.g.wakatime_api_key = vim.fn.system("pass show wakatime/api")
+    -- end,
   },
+  -- {
+  --   "vim-crystal/vim-crystal",
+  --   -- ft="crystal",
+  --   event = "VeryLazy",
+  --   -- lazy = false,
+  --   config = function()
+  --     -- vim.g.crystal_auto_format = 1
+  --     vim.g.crystal_auto_format = 1
+  --   end,
+  -- },
+  {
+    'jinzaizhichi/ChatGPT.nvim',
+    -- event = "VeryLazy",
+    event = "BufRead",
+    config = function()
+      require("chatgpt").setup({
+      -- async_api_key_cmd = "pass show 2dapi/token", 
+      api_key_cmd = "pass show 2dapi/token",
+      api_host_cmd = "pass show openai/host",
+      -- OPENAI_API_HOST= "pass show openai/host",
+      })
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    },
+  }, },
 
 }
 return plugins
