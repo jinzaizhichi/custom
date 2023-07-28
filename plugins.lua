@@ -110,5 +110,9 @@ local plugins = {
       "nvim-telescope/telescope.nvim"
     },
   },
+  {
+    'alker0/chezmoi.vim',
+    event = "VeryLazy",
+  },
 }
 return plugins
