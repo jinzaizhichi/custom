@@ -114,5 +114,9 @@ local plugins = {
     'alker0/chezmoi.vim',
     event = "VeryLazy",
   },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy=false,
+  },
 }
 return plugins
