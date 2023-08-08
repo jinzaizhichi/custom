@@ -133,5 +133,9 @@ local plugins = {
             -- your configuration there
         }
     },
+  {
+    'yianwillis/vimcdoc',
+    event="VeryLazy"
+  },
 }
 return plugins
