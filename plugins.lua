@@ -83,8 +83,8 @@ local plugins = {
     -- end
   },
   -- {
-  --   "vim-crystal/vim-crystal",
-  --   -- ft="crystal",
+  --   "vim-crystal/vim-crystal"
+  --   -- ft="crystal"
   --   event = "VeryLazy",
   --   -- lazy = false,
   --   config = function()
