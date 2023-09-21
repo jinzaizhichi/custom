@@ -47,6 +47,8 @@ local plugins = {
         "mypy",
         "ruff",
         "pyright",
+        "eslint-lsp",
+        "typescript-language-server"
       },
     },
   },
