@@ -48,7 +48,8 @@ local plugins = {
         "ruff",
         "pyright",
         "eslint-lsp",
-        "typescript-language-server"
+        "typescript-language-server",
+        "prettier"
       },
     },
   },
@@ -58,6 +59,20 @@ local plugins = {
         require("plugins.configs.lspconfig")
         require("custom.configs.lspconfig")
      end,
+  },
+  {
+    "mfussenegger/nvim-lint",
+    event="VeryLazy",
+    config=function ()
+      require "custom.configs.lint"
+    end
+  },
+  {
+    "mhartington/formatter.nvim",
+    event="VeryLazy",
+    opts=function ()
+      return require "custom.configs.formatter"
+    end
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
