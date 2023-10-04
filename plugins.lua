@@ -49,7 +49,8 @@ local plugins = {
         "pyright",
         "eslint-lsp",
         "typescript-language-server",
-        "prettier"
+        "prettier",
+        "biome"
       },
     },
   },
@@ -60,20 +61,20 @@ local plugins = {
         require("custom.configs.lspconfig")
      end,
   },
-  -- {
-  --   "mfussenegger/nvim-lint",
-  --   event="VeryLazy",
-  --   config=function ()
-  --     require "custom.configs.lint"
-  --   end
-  -- },
-  -- {
-  --   "mhartington/formatter.nvim",
-  --   event="VeryLazy",
-  --   opts=function ()
-  --     return require "custom.configs.formatter"
-  --   end
-  -- },
+  {
+    "mfussenegger/nvim-lint",
+    event="VeryLazy",
+    config=function ()
+      require "custom.configs.lint"
+    end
+  },
+  {
+    "mhartington/formatter.nvim",
+    event="VeryLazy",
+    opts=function ()
+      return require "custom.configs.formatter"
+    end
+  },
   {
     "jose-elias-alvarez/null-ls.nvim",
     ft ={"python"},
@@ -115,7 +116,7 @@ local plugins = {
     event = "BufRead",
     config = function()
       require("chatgpt").setup({
-      -- async_api_key_cmd = "pass show 2dapi/token", 
+      -- async_api_key_cmd = "pass show 2dapi/token",
       api_key_cmd = "pass show 2dapi/token",
       api_host_cmd = "pass show openai/host",
       -- OPENAI_API_HOST= "pass show openai/host",
