@@ -12,3 +12,5 @@ vim.opt.textwidth = 80
 vim.opt.backup = false
 -- --每个分割窗口行都有独立的状态行
 -- vim.opt.laststatus = 2
+--忽略node_modules
+vim.opt.wildignore:append { '*/node_modules/*' }
