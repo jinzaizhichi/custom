@@ -8,3 +8,7 @@
 vim.opt.colorcolumn = "80"
 vim.opt.wrap = true
 vim.opt.textwidth = 80
+--禁止生产备份文件
+vim.opt.backup = false
+-- --每个分割窗口行都有独立的状态行
+-- vim.opt.laststatus = 2
