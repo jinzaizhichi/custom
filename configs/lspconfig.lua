@@ -11,6 +11,7 @@ lspconfig.pyright.setup({
 lspconfig.tsserver.setup({
   on_attach=on_attach,
   capabilities=capabilities,
+  filetype={"javascript"},
   init_options={
     preferences={
       disableSuggestions=true,

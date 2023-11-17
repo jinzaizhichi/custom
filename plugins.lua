@@ -155,5 +155,9 @@ local plugins = {
     'yianwillis/vimcdoc',
     event="VeryLazy"
   },
+  {
+    'jinzaizhichi/vim-pine-script',
+    event="VeryLazy"
+  },
 }
 return plugins
